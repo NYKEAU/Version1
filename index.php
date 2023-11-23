@@ -17,9 +17,6 @@ if (isset($_POST["submit"])) {
 
     move_uploaded_file($fileTmp, $file);
 
-    $scan = scandir($dir);
-    var_dump($scan);
-
     if ($fileType != "csv") {
         echo "Sorry, only CSV files are allowed.";
         $uploadOk = 0;
