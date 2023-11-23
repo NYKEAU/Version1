@@ -34,7 +34,6 @@ class Converter
             echo '<a href="down-loads/' . substr($_SESSION["instance"]->fileNameV2, 0, -4) . '.json" download>Télécharger JSON</a>';
         } else {
             echo "Veuillez sélectionner un fichier de type CSV ou XML uniquement.";
-            $array = [];
         }
     }
 }

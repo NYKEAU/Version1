@@ -18,7 +18,7 @@ if (isset($_POST["submit"])) {
     move_uploaded_file($fileTmp, $file);
 
     if ($fileType != "csv") {
-        echo "Sorry, only CSV files are allowed.";
+        echo "Désolé, seuls les fichiers CSV sont acceptés.";
         $uploadOk = 0;
     } else {
         $uploadOk = 1;
